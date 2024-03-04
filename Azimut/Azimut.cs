@@ -8,6 +8,7 @@ namespace Azimut
 {
     public class Azimut
     {
-
+        Point p1;
+        Point p2;
     }
 }

@@ -58,14 +58,15 @@ namespace UnitTestAzimut
         [DynamicData(nameof(Data), DynamicDataSourceType.Method)]
         public void TestMethodCtor(Point p1, Point p2)
         {
+            //arrange
+            //act
 
+            //accert
         }
         public static IEnumerable<object[]> Data
         {
-            get
-            {
-                yield return new object[] { }
-            }
+            yield return new object[] {new Point(0,0), new Point(50,70)}
+            yield return new object[] {new Point(90,180), new Point(-90,180), new Point(90,-180), new Point(-90,-180)}
         }
     }
 }
